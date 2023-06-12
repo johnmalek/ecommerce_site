@@ -1,0 +1,215 @@
+<!-- 
+Variables coming into this template:
+
+variable - 
+
+-->
+
+<!-- This page is inheriting everything from the base template -->
+{% extends "base.html" %}
+
+<!-- This block tag is overriding the title block tag from the base template -->
+{% block title %} Home {% endblock %}
+
+<!-- This block tag is overriding the banner block tag from the base template -->
+{% block banner %} {% endblock %}
+
+<!-- This block tag is overriding the content block tag from the base template -->
+{% block content%}
+<div>
+  <p>Your one stop shop for all your shopping needs</p>
+</div>
+
+<br>
+
+<a href="{{ url_for('views.addNewProduct') }}">Add New Product</a>
+
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="static/men.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/women.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/accessories.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <br>
+  <div class="d-flex justify-content-between">
+      <p>New Male Clothing</p>
+      <a href="{{ url_for('views.men_clothing') }}" class="link-primary">See All</a>
+  </div>
+  
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/men.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/men.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/men.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/men.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <br>
+  
+  <hr>
+  
+  <br>
+  
+  <div class="d-flex justify-content-between">
+      <p>New Female Clothing</p>
+      <a href="{{ url_for('views.women_clothing') }}" class="link-primary">See All</a>
+  </div>
+  
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/women.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/women.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/women.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/women.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br>
+  </section>
+  
+  <hr>
+  
+  <br>
+
+  <div class="d-flex justify-content-between">
+      <p>New Accessories Clothing</p>
+      <a href="{{ url_for('views.accessories') }}" class="link-primary">See All</a>
+  </div>
+
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/accessories.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/accessories.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/accessories.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                  <div class="card" style="width: 16rem;">
+                      <img src="static/accessories.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+{% endblock %}

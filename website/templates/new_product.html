@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}
+    Add New Product
+{% endblock %}
+{% block content %}
+    <br>
+
+    <h1 style="text-align: center;">Add New Product</h1>
+    <form action="{{ url_for('views.addNewProduct') }}" method="post" enctype="multipart/form-data">
+        <div class="container text-center">
+            <label for="Name">Name: </label>
+            <br>
+            <input type="text" name="product_name" placeholder="Name">
+            <br>
+            <label for="Price">Price: </label>
+            <br>
+            <input type="text" name="product_price" placeholder="Price">
+            <br>
+            <label for="Description">Description: </label>
+            <br>
+            <input type="text" name="product_desc" placeholder="Description">
+            <br>
+            <label for="Category">Category: </label>
+            <br>
+            <input type="text" name="product_category" placeholder="Category">
+            <br>
+            <label for="Size">Size: </label>
+            <br>
+            <input type="text" name="product_size" placeholder="Size">
+            <br>
+            <label for="Image">Image: </label>
+            <br>
+            <input type="file" name="image">
+            <br>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </form>
+{% endblock %}
